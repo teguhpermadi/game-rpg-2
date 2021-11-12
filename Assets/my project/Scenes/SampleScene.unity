@@ -909,7 +909,7 @@ MonoBehaviour:
   questEntryNumber: 1
   questEntryState: 0
   luaCode: 
-  sequence: AnimatorPlay(Talking);
+  sequence: 
   sequenceSpeaker: {fileID: 191967864}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1

@@ -372,11 +372,11 @@ MonoBehaviour:
     - title: Entry 1 State
       value: active
       type: 0
-      typeString: 
+      typeString: CustomFieldType_QuestState
     - title: Entry 1
       value: '[var=komponen]/4 didapatkan'
       type: 0
-      typeString: 
+      typeString: CustomFieldType_Text
   - id: 11
     fields:
     - title: Name
@@ -2427,8 +2427,7 @@ MonoBehaviour:
         type: 0
         typeString: 
       - title: Dialogue Text
-        value: Apakah teknologi yang kita miliki sekarang tidak mampu membuat penawar
-          virus tersebut?
+        value: Apakah kita tidak mampu membuat penawar virus tersebut?
         type: 0
         typeString: 
       - title: Parenthetical
@@ -3175,7 +3174,7 @@ MonoBehaviour:
         y: 220
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
+    canvasScrollPosition: {x: 25, y: 248}
     canvasZoom: 1
   - id: 3
     fields:
@@ -3719,8 +3718,7 @@ MonoBehaviour:
         destinationDialogueID: 17
         isConnector: 0
         priority: 2
-      conditionsString: Variable["komponen"] >= 4 and (CurrentQuestState("Komponen")
-        == "active")
+      conditionsString: CurrentQuestState("Komponen") == "success"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -3728,7 +3726,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 390
-        y: 120
+        y: 119.082565
         width: 160
         height: 30
     - id: 17
@@ -4361,7 +4359,7 @@ MonoBehaviour:
       canvasRect:
         serializedVersion: 2
         x: 300
-        y: 420
+        y: 419.08252
         width: 160
         height: 30
     - id: 33
@@ -4429,7 +4427,7 @@ MonoBehaviour:
         y: 320
         width: 160
         height: 30
-    canvasScrollPosition: {x: 1.906311, y: 18.348465}
+    canvasScrollPosition: {x: 22.089813, y: 264.22006}
     canvasZoom: 1.09
   - id: 4
     fields:
