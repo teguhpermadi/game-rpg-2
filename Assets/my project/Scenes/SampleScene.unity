@@ -787,6 +787,7 @@ GameObject:
   - component: {fileID: 191967869}
   - component: {fileID: 191967868}
   - component: {fileID: 191967870}
+  - component: {fileID: 191967871}
   m_Layer: 0
   m_Name: komandan
   m_TagString: Untagged
@@ -908,8 +909,8 @@ MonoBehaviour:
   questEntryNumber: 1
   questEntryState: 0
   luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
+  sequence: AnimatorPlay(Talking);
+  sequenceSpeaker: {fileID: 191967864}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
   alertMessage: 
@@ -1049,6 +1050,25 @@ MonoBehaviour:
     onDialogueSystemUnpause:
       m_PersistentCalls:
         m_Calls: []
+--- !u!95 &191967871
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 191967863}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 941cb7d03b7f0c14a806ce35ae680d97, type: 3}
+  m_Controller: {fileID: 9100000, guid: b205ae89d57ced743b2a38e0e4a25a4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &258556970
 GameObject:
   m_ObjectHideFlags: 0
@@ -1502,7 +1522,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 307623952}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -1618,7 +1638,7 @@ MonoBehaviour:
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
+  alertMessage: CPU didapatkan
   textTable: {fileID: 0}
   alertDuration: 0
   sendMessages: []
@@ -1658,7 +1678,20 @@ MonoBehaviour:
   setAnimatorStateActions: []
   onExecute:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2134450850}
+        m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.DialogueSystemTrigger,
+          Assembly-CSharp-firstpass
+        m_MethodName: OnUse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
@@ -3584,6 +3617,7 @@ GameObject:
   - component: {fileID: 713715922}
   - component: {fileID: 713715921}
   - component: {fileID: 713715923}
+  - component: {fileID: 713715924}
   m_Layer: 0
   m_Name: penjaga pintu
   m_TagString: Untagged
@@ -3680,8 +3714,8 @@ MonoBehaviour:
   questEntryNumber: 1
   questEntryState: 0
   luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
+  sequence: AnimatorPlay(Talking);
+  sequenceSpeaker: {fileID: 713715917}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
   alertMessage: 
@@ -3846,6 +3880,25 @@ MonoBehaviour:
     onDialogueSystemUnpause:
       m_PersistentCalls:
         m_Calls: []
+--- !u!95 &713715924
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 713715916}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 941cb7d03b7f0c14a806ce35ae680d97, type: 3}
+  m_Controller: {fileID: 9100000, guid: b205ae89d57ced743b2a38e0e4a25a4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &752369245
 GameObject:
   m_ObjectHideFlags: 0
@@ -3972,6 +4025,7 @@ GameObject:
   - component: {fileID: 761622905}
   - component: {fileID: 761622904}
   - component: {fileID: 761622906}
+  - component: {fileID: 761622907}
   m_Layer: 0
   m_Name: penjaga gudang
   m_TagString: Untagged
@@ -4068,8 +4122,8 @@ MonoBehaviour:
   questEntryNumber: 1
   questEntryState: 0
   luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
+  sequence: AnimatorPlay(Talking);
+  sequenceSpeaker: {fileID: 761622900}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
   alertMessage: 
@@ -4234,6 +4288,25 @@ MonoBehaviour:
     onDialogueSystemUnpause:
       m_PersistentCalls:
         m_Calls: []
+--- !u!95 &761622907
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 761622899}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 941cb7d03b7f0c14a806ce35ae680d97, type: 3}
+  m_Controller: {fileID: 9100000, guid: b205ae89d57ced743b2a38e0e4a25a4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &822003889
 GameObject:
   m_ObjectHideFlags: 0
@@ -4816,7 +4889,7 @@ MonoBehaviour:
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
+  alertMessage: Keyboard didapatkan
   textTable: {fileID: 0}
   alertDuration: 0
   sendMessages: []
@@ -4856,7 +4929,20 @@ MonoBehaviour:
   setAnimatorStateActions: []
   onExecute:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2134450850}
+        m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.DialogueSystemTrigger,
+          Assembly-CSharp-firstpass
+        m_MethodName: OnUse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
@@ -5199,19 +5285,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 22402418, guid: 65d09cff7cef67d47a9d1f9a022f2d84, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22402418, guid: 65d09cff7cef67d47a9d1f9a022f2d84, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22456230, guid: 65d09cff7cef67d47a9d1f9a022f2d84, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22456230, guid: 65d09cff7cef67d47a9d1f9a022f2d84, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 22471896, guid: 65d09cff7cef67d47a9d1f9a022f2d84, type: 3}
       propertyPath: m_Pivot.x
@@ -5806,6 +5892,7 @@ GameObject:
   - component: {fileID: 1129145602}
   - component: {fileID: 1129145601}
   - component: {fileID: 1129145603}
+  - component: {fileID: 1129145604}
   m_Layer: 0
   m_Name: penjaga portal
   m_TagString: Untagged
@@ -5927,8 +6014,8 @@ MonoBehaviour:
   questEntryNumber: 1
   questEntryState: 0
   luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
+  sequence: AnimatorPlay(Talking);
+  sequenceSpeaker: {fileID: 1129145597}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
   alertMessage: 
@@ -6068,6 +6155,25 @@ MonoBehaviour:
     onDialogueSystemUnpause:
       m_PersistentCalls:
         m_Calls: []
+--- !u!95 &1129145604
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1129145596}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 941cb7d03b7f0c14a806ce35ae680d97, type: 3}
+  m_Controller: {fileID: 9100000, guid: b205ae89d57ced743b2a38e0e4a25a4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1133070841
 GameObject:
   m_ObjectHideFlags: 0
@@ -6570,7 +6676,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1251658009
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6841,7 +6947,7 @@ MonoBehaviour:
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
+  alertMessage: Monitor didapatkan
   textTable: {fileID: 0}
   alertDuration: 0
   sendMessages: []
@@ -6881,7 +6987,20 @@ MonoBehaviour:
   setAnimatorStateActions: []
   onExecute:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2134450850}
+        m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.DialogueSystemTrigger,
+          Assembly-CSharp-firstpass
+        m_MethodName: OnUse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
@@ -7258,6 +7377,7 @@ GameObject:
   - component: {fileID: 1516702006}
   - component: {fileID: 1516702005}
   - component: {fileID: 1516702007}
+  - component: {fileID: 1516702008}
   m_Layer: 0
   m_Name: profesor
   m_TagString: Untagged
@@ -7379,8 +7499,8 @@ MonoBehaviour:
   questEntryNumber: 1
   questEntryState: 0
   luaCode: 
-  sequence: 
-  sequenceSpeaker: {fileID: 0}
+  sequence: AnimatorPlay(Talking);
+  sequenceSpeaker: {fileID: 1516702001}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
   alertMessage: 
@@ -7520,6 +7640,25 @@ MonoBehaviour:
     onDialogueSystemUnpause:
       m_PersistentCalls:
         m_Calls: []
+--- !u!95 &1516702008
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1516702000}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 941cb7d03b7f0c14a806ce35ae680d97, type: 3}
+  m_Controller: {fileID: 9100000, guid: b205ae89d57ced743b2a38e0e4a25a4f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1571011654
 GameObject:
   m_ObjectHideFlags: 0
@@ -7784,7 +7923,7 @@ MonoBehaviour:
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
+  alertMessage: Mouse didapatkan
   textTable: {fileID: 0}
   alertDuration: 0
   sendMessages: []
@@ -7824,7 +7963,20 @@ MonoBehaviour:
   setAnimatorStateActions: []
   onExecute:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2134450850}
+        m_TargetAssemblyTypeName: PixelCrushers.DialogueSystem.DialogueSystemTrigger,
+          Assembly-CSharp-firstpass
+        m_MethodName: OnUse
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   useConversationTitlePicker: 1
   useBarkTitlePicker: 1
   useQuestNamePicker: 1
@@ -10803,6 +10955,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 1082271958561512970, guid: 941cb7d03b7f0c14a806ce35ae680d97,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1339101018200438765, guid: 941cb7d03b7f0c14a806ce35ae680d97,
         type: 3}
       propertyPath: m_Layer
@@ -11421,7 +11578,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c593457cd8105e148906690e1707c592, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  trigger: 16
+  trigger: 32
   condition:
     luaConditions:
     - Variable["komponen"] >= 4
@@ -11443,7 +11600,7 @@ MonoBehaviour:
   sequenceSpeaker: {fileID: 0}
   sequenceListener: {fileID: 0}
   waitOneFrameOnStartOrEnable: 1
-  alertMessage: 
+  alertMessage: Sukses
   textTable: {fileID: 0}
   alertDuration: 5
   sendMessages: []
