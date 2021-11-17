@@ -475,62 +475,6 @@ MonoBehaviour:
       value: jumlah komponen komputer yang telah ditemukan.
       type: 0
       typeString: 
-  - id: 4
-    fields:
-    - title: Name
-      value: cpuActivated
-      type: 0
-      typeString: 
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: aktivasi cpu
-      type: 0
-      typeString: 
-  - id: 3
-    fields:
-    - title: Name
-      value: monitorActivated
-      type: 0
-      typeString: 
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: aktivasi monitor
-      type: 0
-      typeString: 
-  - id: 5
-    fields:
-    - title: Name
-      value: keyboardActivated
-      type: 0
-      typeString: 
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: aktivasi keyboard
-      type: 0
-      typeString: 
-  - id: 6
-    fields:
-    - title: Name
-      value: mouseActivated
-      type: 0
-      typeString: 
-    - title: Initial Value
-      value: True
-      type: 2
-      typeString: CustomFieldType_Boolean
-    - title: Description
-      value: aktivasi mouse
-      type: 0
-      typeString: 
   conversations:
   - id: 1
     fields:
@@ -4352,7 +4296,10 @@ MonoBehaviour:
       userScript: 'SetQuestState("Komponen", "active");
 
         SetQuestState("BertemuPenjagaGudang",
-        "success")'
+        "success");
+
+        Variable["Alert"] = "Mendapatkan: [var=komponen]/4 komponen
+        komputer"'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -4427,8 +4374,8 @@ MonoBehaviour:
         y: 320
         width: 160
         height: 30
-    canvasScrollPosition: {x: 22.089813, y: 264.22006}
-    canvasZoom: 1.09
+    canvasScrollPosition: {x: 0, y: 14.873875}
+    canvasZoom: 0.49000058
   - id: 4
     fields:
     - title: Title
@@ -4744,8 +4691,7 @@ MonoBehaviour:
         destinationDialogueID: 4
         isConnector: 0
         priority: 2
-      conditionsString: (CurrentQuestState("BertemuPenjagaPortal") == "active") and
-        (CurrentQuestState("MasaLalu") == "active")
+      conditionsString: CurrentQuestState("BertemuPenjagaPortal") == "active"
       userScript: 
       onExecute:
         m_PersistentCalls:
@@ -5690,7 +5636,7 @@ MonoBehaviour:
       - title: Title
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Pictures
         value: '[]'
         type: 3
@@ -5698,7 +5644,7 @@ MonoBehaviour:
       - title: Description
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Actor
         value: 1
         type: 5
@@ -5710,15 +5656,15 @@ MonoBehaviour:
       - title: Menu Text
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Dialogue Text
         value: Terima kasih.
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Parenthetical
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Audio Files
         value: '[]'
         type: 3
@@ -5726,11 +5672,11 @@ MonoBehaviour:
       - title: Video File
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       - title: Sequence
         value: 
         type: 0
-        typeString: 
+        typeString: CustomFieldType_Text
       conversationID: 4
       isRoot: 0
       isGroup: 0
@@ -5743,15 +5689,27 @@ MonoBehaviour:
       userScript: 
       onExecute:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 0}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
       canvasRect:
         serializedVersion: 2
         x: 120
         y: 770
         width: 160
         height: 30
-    canvasScrollPosition: {x: 0, y: 0}
-    canvasZoom: 0.40000045
+    canvasScrollPosition: {x: 0, y: 412.76605}
+    canvasZoom: 0.94000006
   - id: 5
     fields:
     - title: Title
@@ -6006,7 +5964,7 @@ MonoBehaviour:
   - id: 6
     fields:
     - title: Title
-      value: cpuActivated
+      value: getCpu
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -6171,7 +6129,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: CurrentQuestState("Komponen") == "active"
-      userScript: Variable["cpuActivated"] = false
+      userScript: Variable["komponen"] = Variable["komponen"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6186,7 +6144,7 @@ MonoBehaviour:
   - id: 7
     fields:
     - title: Title
-      value: monitorActivated
+      value: getMonitor
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -6351,7 +6309,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: CurrentQuestState("Komponen") == "active"
-      userScript: Variable["monitorActivated"] = false
+      userScript: Variable["komponen"] = Variable["komponen"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6366,7 +6324,7 @@ MonoBehaviour:
   - id: 8
     fields:
     - title: Title
-      value: kayboardActivated
+      value: getKeyboard
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -6531,7 +6489,7 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: CurrentQuestState("Komponen") == "active"
-      userScript: Variable["keyboardActivated"] = false
+      userScript: Variable["komponen"] = Variable["komponen"] + 1
       onExecute:
         m_PersistentCalls:
           m_Calls: []
@@ -6546,7 +6504,7 @@ MonoBehaviour:
   - id: 9
     fields:
     - title: Title
-      value: mouseActivated
+      value: getMouse
       type: 0
       typeString: CustomFieldType_Text
     - title: Pictures
@@ -6711,7 +6669,190 @@ MonoBehaviour:
       conditionPriority: 2
       outgoingLinks: []
       conditionsString: CurrentQuestState("Komponen") == "active"
-      userScript: Variable["mouseActivated"] = false
+      userScript: Variable["komponen"] = Variable["komponen"] + 1
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 80
+        width: 160
+        height: 30
+    canvasScrollPosition: {x: 0, y: 0}
+    canvasZoom: 1
+  - id: 10
+    fields:
+    - title: Title
+      value: getKomponen
+      type: 0
+      typeString: 
+    - title: Pictures
+      value: '[]'
+      type: 3
+      typeString: CustomFieldType_Files
+    - title: Description
+      value: 
+      type: 0
+      typeString: 
+    - title: Actor
+      value: 1
+      type: 5
+      typeString: CustomFieldType_Actor
+    - title: Conversant
+      value: 2
+      type: 5
+      typeString: CustomFieldType_Actor
+    overrideSettings:
+      useOverrides: 0
+      overrideSubtitleSettings: 0
+      showNPCSubtitlesDuringLine: 1
+      showNPCSubtitlesWithResponses: 1
+      showPCSubtitlesDuringLine: 0
+      skipPCSubtitleAfterResponseMenu: 0
+      subtitleCharsPerSecond: 30
+      minSubtitleSeconds: 2
+      continueButton: 0
+      overrideSequenceSettings: 0
+      defaultSequence: 
+      defaultPlayerSequence: 
+      defaultResponseMenuSequence: 
+      overrideInputSettings: 0
+      alwaysForceResponseMenu: 1
+      includeInvalidEntries: 0
+      responseTimeout: 0
+    nodeColor: 
+    dialogueEntries:
+    - id: 0
+      fields:
+      - title: Title
+        value: START
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: None()
+        type: 0
+        typeString: 
+      conversationID: 10
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: 
+      conditionPriority: 2
+      outgoingLinks:
+      - originConversationID: 10
+        originDialogueID: 0
+        destinationConversationID: 10
+        destinationDialogueID: 1
+        isConnector: 0
+        priority: 2
+      conditionsString: 
+      userScript: 
+      onExecute:
+        m_PersistentCalls:
+          m_Calls: []
+      canvasRect:
+        serializedVersion: 2
+        x: 20
+        y: 30
+        width: 160
+        height: 30
+    - id: 1
+      fields:
+      - title: Title
+        value: New Dialogue Entry
+        type: 0
+        typeString: 
+      - title: Pictures
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Description
+        value: 
+        type: 0
+        typeString: 
+      - title: Actor
+        value: 2
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Conversant
+        value: 1
+        type: 5
+        typeString: CustomFieldType_Actor
+      - title: Menu Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Dialogue Text
+        value: 
+        type: 0
+        typeString: 
+      - title: Parenthetical
+        value: 
+        type: 0
+        typeString: 
+      - title: Audio Files
+        value: '[]'
+        type: 3
+        typeString: CustomFieldType_Files
+      - title: Video File
+        value: 
+        type: 0
+        typeString: 
+      - title: Sequence
+        value: Continue()
+        type: 0
+        typeString: 
+      conversationID: 10
+      isRoot: 0
+      isGroup: 0
+      nodeColor: 
+      delaySimStatus: 0
+      falseConditionAction: Block
+      conditionPriority: 2
+      outgoingLinks: []
+      conditionsString: 
+      userScript: 'Variable["komponen"] = Variable["komponen"] + 1
+
+        Variable["Alert"]
+        = "Mendapatkan: [var=komponen]/4 komponen komputer";'
       onExecute:
         m_PersistentCalls:
           m_Calls: []
