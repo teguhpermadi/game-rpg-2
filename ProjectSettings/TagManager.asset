@@ -4,6 +4,9 @@
 TagManager:
   serializedVersion: 2
   tags:
+  - Stair
+  - Climb
+  - Fly
   - Action
   - AutoCrouch
   - Ragdoll
@@ -30,6 +33,7 @@ TagManager:
   - CoverPoint
   - Interactable
   - AIAction
+  - Animal
   layers:
   - Default
   - TransparentFX
@@ -51,6 +55,7 @@ TagManager:
   - 
   - 
   - 
+  - Animal
   - 
   - 
   - 
@@ -60,8 +65,7 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
+  - Item
   - 
   m_SortingLayers:
   - name: Default
