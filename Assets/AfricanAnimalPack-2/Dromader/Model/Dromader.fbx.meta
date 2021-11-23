@@ -365,7 +365,7 @@ ModelImporter:
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
     importConstraints: 0
-    animationCompression: 0
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5
@@ -611,7 +611,7 @@ ModelImporter:
       internalID: 0
       firstFrame: 610
       lastFrame: 689
-      wrapMode: 0
+      wrapMode: 2
       orientationOffsetY: 0
       level: 0
       cycleOffset: 0
@@ -970,7 +970,232 @@ ModelImporter:
   humanDescription:
     serializedVersion: 3
     human: []
-    skeleton: []
+    skeleton:
+    - name: Dromader(Clone)
+      parentName: 
+      position: {x: 0, y: 0, z: 0}
+      rotation: {x: 0, y: 0, z: 0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: left
+      parentName: Dromader(Clone)
+      position: {x: 3.9098108, y: 1.2320515, z: -0.43443468}
+      rotation: {x: 0, y: -1.110223e-16, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: camel__G_Temp_left
+      parentName: Dromader(Clone)
+      position: {x: 2.323737, y: 0.89325976, z: -0.31253347}
+      rotation: {x: 0, y: -1.110223e-16, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: camel_Only_Bones_Bake_16_left
+      parentName: Dromader(Clone)
+      position: {x: 2.323737, y: 0.89325976, z: -0.31253347}
+      rotation: {x: 0, y: -1.110223e-16, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Cammel_2G
+      parentName: Dromader(Clone)
+      position: {x: 1.602823, y: 2.1015046, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_SHJntGrp1
+      parentName: Dromader(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_ROOTSHJnt
+      parentName: Camel_1humpM2015_SHJntGrp1
+      position: {x: 0, y: 1.1314343, z: -0.14841408}
+      rotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Spine_01SHJnt
+      parentName: Camel_1humpM2015_ROOTSHJnt
+      position: {x: -1.598905e-24, y: 2.842171e-16, z: 0.21657409}
+      rotation: {x: 0.5, y: 0.5, z: -0.5, w: 0.5}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Spine_02SHJnt
+      parentName: Camel_1humpM2015_Spine_01SHJnt
+      position: {x: -0.21657409, y: 4.8089108e-17, z: 0}
+      rotation: {x: 3.0616168e-17, y: -1.110223e-16, z: -2.4894982e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Spine_03SHJnt
+      parentName: Camel_1humpM2015_Spine_02SHJnt
+      position: {x: -0.21657409, y: 4.8089108e-17, z: -2.842171e-16}
+      rotation: {x: 3.0616168e-17, y: -1.110223e-16, z: -2.4894982e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Spine_04SHJnt
+      parentName: Camel_1humpM2015_Spine_03SHJnt
+      position: {x: -0.21657409, y: -2.3612798e-16, z: -5.684342e-16}
+      rotation: {x: 3.0616168e-17, y: -1.110223e-16, z: -2.4894982e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Spine_TopSHJnt
+      parentName: Camel_1humpM2015_Spine_04SHJnt
+      position: {x: -0.21657409, y: 3.323062e-16, z: 0}
+      rotation: {x: 3.0616168e-17, y: -1.110223e-16, z: -2.4894982e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_Clavicle_01_01SHJnt
+      parentName: Camel_1humpM2015_Spine_TopSHJnt
+      position: {x: 0.00012594409, y: -0.18714945, z: -0.0021879128}
+      rotation: {x: 0.4490346, y: -0.44903463, z: 0.6080524, w: 0.47645378}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_FrontLeg_HipSHJnt
+      parentName: Camel_1humpM2015_l_Clavicle_01_01SHJnt
+      position: {x: 0.015343897, y: 0.024930473, z: 0.17013319}
+      rotation: {x: -0.55041534, y: 0.48903197, z: 0.42262086, w: 0.52847165}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_FrontLeg_KneeSHJnt
+      parentName: Camel_1humpM2015_l_FrontLeg_HipSHJnt
+      position: {x: -0.2937675, y: -1.7763567e-16, z: 2.4868996e-16}
+      rotation: {x: -0.0011699793, y: 0.060365334, z: -0.0058589564, w: 0.99815845}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_FrontLeg_AnkleSHJnt
+      parentName: Camel_1humpM2015_l_FrontLeg_KneeSHJnt
+      position: {x: -0.5404735, y: -3.5527135e-16, z: 1.4210854e-16}
+      rotation: {x: -5.4406767e-18, y: 0.06274908, z: 8.8738335e-17, w: 0.99802935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_FrontLeg_BallSHJnt
+      parentName: Camel_1humpM2015_l_FrontLeg_AnkleSHJnt
+      position: {x: -0.40618724, y: 1.0658141e-16, z: -0.024592476}
+      rotation: {x: -3.503861e-18, y: 0.7071043, z: 3.5038854e-18, w: 0.7071092}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_Clavicle_01_01SHJnt
+      parentName: Camel_1humpM2015_Spine_TopSHJnt
+      position: {x: 0.00012594409, y: 0.18714945, z: -0.0021879128}
+      rotation: {x: -0.44903463, y: 0.4490346, z: 0.47645372, w: 0.6080524}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_FrontLeg_HipSHJnt
+      parentName: Camel_1humpM2015_r_Clavicle_01_01SHJnt
+      position: {x: -0.015343897, y: 0.024930473, z: 0.17013319}
+      rotation: {x: -0.48903212, y: 0.5504152, z: 0.5284717, w: 0.42262083}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_FrontLeg_KneeSHJnt
+      parentName: Camel_1humpM2015_r_FrontLeg_HipSHJnt
+      position: {x: -0.2937675, y: -1.0658141e-16, z: 3.5527136e-17}
+      rotation: {x: 0.0011700242, y: 0.06036488, z: 0.0058590467, w: 0.9981586}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_FrontLeg_AnkleSHJnt
+      parentName: Camel_1humpM2015_r_FrontLeg_KneeSHJnt
+      position: {x: -0.5404735, y: -3.1974422e-16, z: 1.4210854e-16}
+      rotation: {x: -5.4406767e-18, y: 0.06274908, z: 8.8738335e-17, w: 0.99802935}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_FrontLeg_BallSHJnt
+      parentName: Camel_1humpM2015_r_FrontLeg_AnkleSHJnt
+      position: {x: -0.40618724, y: -6.0396133e-16, z: -0.024592476}
+      rotation: {x: -3.503861e-18, y: 0.7071043, z: 3.5038854e-18, w: 0.7071092}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Neck_01SHJnt
+      parentName: Camel_1humpM2015_Spine_TopSHJnt
+      position: {x: -0.36576247, y: -1.9731798e-16, z: 0.13030662}
+      rotation: {x: -1.1867661e-16, y: -0.03718975, z: 1.04065475e-16, w: 0.9993082}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Neck_02SHJnt
+      parentName: Camel_1humpM2015_Neck_01SHJnt
+      position: {x: -0.31000954, y: -2.8975435e-16, z: -0.088543564}
+      rotation: {x: -0.000000007504199, y: -5.9474853e-18, z: -1.0278197e-17, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Neck_TopSHJnt
+      parentName: Camel_1humpM2015_Neck_02SHJnt
+      position: {x: -0.28607953, y: -2.4290726e-16, z: -0.17010576}
+      rotation: {x: -3.654634e-16, y: -0.5580285, z: -1.9529552e-16, w: 0.82982177}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Head_JawSHJnt
+      parentName: Camel_1humpM2015_Neck_TopSHJnt
+      position: {x: 0.013675304, y: 3.7901356e-17, z: 0.14728488}
+      rotation: {x: 0.034316875, y: 0.034316875, z: 0.7062736, w: 0.7062736}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Head_JawEndSHJnt
+      parentName: Camel_1humpM2015_Head_JawSHJnt
+      position: {x: -0.0007976688, y: -0.035354406, z: 0.26101696}
+      rotation: {x: 0.7071068, y: -0, z: -0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Head_TopSHJnt
+      parentName: Camel_1humpM2015_Neck_TopSHJnt
+      position: {x: -0.16091831, y: 1.5214027e-16, z: 0.023949618}
+      rotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Hump
+      parentName: Camel_1humpM2015_Spine_02SHJnt
+      position: {x: -0.14085841, y: -1.24881525e-17, z: -0.39420012}
+      rotation: {x: -0.40334624, y: -0.5807855, z: 0.40334624, w: 0.5807855}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_HindLeg_HipSHJnt
+      parentName: Camel_1humpM2015_ROOTSHJnt
+      position: {x: -0.19785704, y: -0.14841406, z: 0}
+      rotation: {x: 0.45142013, y: -0.44975317, z: 0.52301943, w: 0.5660324}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_HindLeg_Knee1SHJnt
+      parentName: Camel_1humpM2015_l_HindLeg_HipSHJnt
+      position: {x: -0.35980123, y: -8.5265126e-16, z: 1.4210854e-16}
+      rotation: {x: -0.00020878013, y: -0.1080937, z: -0.0014936622, w: 0.9941396}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_HindLeg_Knee2SHJnt
+      parentName: Camel_1humpM2015_l_HindLeg_Knee1SHJnt
+      position: {x: -0.44916883, y: -3.5527135e-16, z: -1.4210854e-16}
+      rotation: {x: -1.5374305e-17, y: 0.23439582, z: 6.6892574e-16, w: 0.97214127}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_HindLeg_AnkleSHJnt
+      parentName: Camel_1humpM2015_l_HindLeg_Knee2SHJnt
+      position: {x: -0.36006626, y: -6.0396133e-16, z: 2.1316282e-16}
+      rotation: {x: -0.006130104, y: 0.53346753, z: 0.031076172, w: 0.8452273}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_l_HindLeg_BallSHJnt
+      parentName: Camel_1humpM2015_l_HindLeg_AnkleSHJnt
+      position: {x: -0.13003324, y: 0.0024629885, z: 0.027758071}
+      rotation: {x: -7.911113e-17, y: 0.7071068, z: 7.911113e-17, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_HindLeg_HipSHJnt
+      parentName: Camel_1humpM2015_ROOTSHJnt
+      position: {x: 0.19785704, y: -0.14841406, z: 0}
+      rotation: {x: 0.44975322, y: -0.45142007, z: 0.5660324, w: 0.52301943}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_HindLeg_Knee1SHJnt
+      parentName: Camel_1humpM2015_r_HindLeg_HipSHJnt
+      position: {x: -0.35980123, y: -3.5527136e-17, z: 0}
+      rotation: {x: 0.00020880994, y: -0.10809369, z: 0.0014936475, w: 0.99413955}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_HindLeg_Knee2SHJnt
+      parentName: Camel_1humpM2015_r_HindLeg_Knee1SHJnt
+      position: {x: -0.44916883, y: -6.750156e-16, z: 0}
+      rotation: {x: -5.3636848e-18, y: 0.2343958, z: 3.3204925e-16, w: 0.97214127}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_HindLeg_AnkleSHJnt
+      parentName: Camel_1humpM2015_r_HindLeg_Knee2SHJnt
+      position: {x: -0.36006626, y: -2.4868996e-16, z: 0}
+      rotation: {x: 0.0061300136, y: 0.53346753, z: -0.031076182, w: 0.8452273}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_r_HindLeg_BallSHJnt
+      parentName: Camel_1humpM2015_r_HindLeg_AnkleSHJnt
+      position: {x: -0.13003324, y: -0.0024629885, z: 0.027758071}
+      rotation: {x: -1.3796019e-16, y: 0.7071068, z: 1.3796019e-16, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Tail_01_01SHJnt
+      parentName: Camel_1humpM2015_ROOTSHJnt
+      position: {x: -1.3999279e-16, y: 0.026859354, z: -0.25526083}
+      rotation: {x: -0, y: -0.7071068, z: 0, w: 0.7071068}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Tail_01_02SHJnt
+      parentName: Camel_1humpM2015_Tail_01_01SHJnt
+      position: {x: -0.1803677, y: 2.842171e-16, z: -4.0049673e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Tail_01_03SHJnt
+      parentName: Camel_1humpM2015_Tail_01_02SHJnt
+      position: {x: -0.14841406, y: 2.842171e-16, z: -3.295454e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_Tail_01_04SHJnt
+      parentName: Camel_1humpM2015_Tail_01_03SHJnt
+      position: {x: -0.16968842, y: 2.842171e-16, z: -3.7678398e-17}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: Camel_1humpM2015_SHJntGrp
+      parentName: Dromader(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
+    - name: msh4
+      parentName: Dromader(Clone)
+      position: {x: -0, y: 0, z: 0}
+      rotation: {x: 0, y: -0, z: -0, w: 1}
+      scale: {x: 1, y: 1, z: 1}
     armTwist: 0.5
     foreArmTwist: 0.5
     upperLegTwist: 0.5
@@ -981,7 +1206,7 @@ ModelImporter:
     globalScale: 0.01
     rootMotionBoneName: 
     hasTranslationDoF: 0
-    hasExtraRoot: 0
+    hasExtraRoot: 1
     skeletonHasParents: 0
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
